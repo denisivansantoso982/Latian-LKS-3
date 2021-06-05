@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="perpustakaan_smk_nasionalDataSet" targetNamespace="http://tempuri.org/perpustakaan_smk_nasionalDataSet.xsd" xmlns:mstns="http://tempuri.org/perpustakaan_smk_nasionalDataSet.xsd" xmlns="http://tempuri.org/perpustakaan_smk_nasionalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="perpustakaan_smk_nasionalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="perpustakaan_smk_nasionalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Latian_LKS_3.Properties.Settings.GlobalReference.Default.perpustakaan_smk_nasionalConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="riwayat_peminjaman_bukuTableAdapter" GeneratorDataComponentClassName="riwayat_peminjaman_bukuTableAdapter" Name="riwayat_peminjaman_buku" UserDataComponentName="riwayat_peminjaman_bukuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="perpustakaan_smk_nasionalConnectionString (Settings)" DbObjectName="perpustakaan_smk_nasional.dbo.riwayat_peminjaman_buku" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_pinjam, judul, nama_kategori, nama_lengkap, nama_petugas, kode_buku, tgl_pinjam, tgl_kembali FROM dbo.riwayat_peminjaman_buku</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_pinjam" DataSetColumn="id_pinjam" />
+              <Mapping SourceColumn="judul" DataSetColumn="judul" />
+              <Mapping SourceColumn="nama_kategori" DataSetColumn="nama_kategori" />
+              <Mapping SourceColumn="nama_lengkap" DataSetColumn="nama_lengkap" />
+              <Mapping SourceColumn="nama_petugas" DataSetColumn="nama_petugas" />
+              <Mapping SourceColumn="kode_buku" DataSetColumn="kode_buku" />
+              <Mapping SourceColumn="tgl_pinjam" DataSetColumn="tgl_pinjam" />
+              <Mapping SourceColumn="tgl_kembali" DataSetColumn="tgl_kembali" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="perpustakaan_smk_nasionalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="perpustakaan_smk_nasionalDataSet" msprop:Generator_UserDSName="perpustakaan_smk_nasionalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="riwayat_peminjaman_buku" msprop:Generator_TableClassName="riwayat_peminjaman_bukuDataTable" msprop:Generator_TableVarName="tableriwayat_peminjaman_buku" msprop:Generator_TablePropName="riwayat_peminjaman_buku" msprop:Generator_RowDeletingName="riwayat_peminjaman_bukuRowDeleting" msprop:Generator_RowChangingName="riwayat_peminjaman_bukuRowChanging" msprop:Generator_RowEvHandlerName="riwayat_peminjaman_bukuRowChangeEventHandler" msprop:Generator_RowDeletedName="riwayat_peminjaman_bukuRowDeleted" msprop:Generator_UserTableName="riwayat_peminjaman_buku" msprop:Generator_RowChangedName="riwayat_peminjaman_bukuRowChanged" msprop:Generator_RowEvArgName="riwayat_peminjaman_bukuRowChangeEvent" msprop:Generator_RowClassName="riwayat_peminjaman_bukuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_pinjam" msprop:Generator_ColumnVarNameInTable="columnid_pinjam" msprop:Generator_ColumnPropNameInRow="id_pinjam" msprop:Generator_ColumnPropNameInTable="id_pinjamColumn" msprop:Generator_UserColumnName="id_pinjam" type="xs:int" />
+              <xs:element name="judul" msprop:Generator_ColumnVarNameInTable="columnjudul" msprop:Generator_ColumnPropNameInRow="judul" msprop:Generator_ColumnPropNameInTable="judulColumn" msprop:Generator_UserColumnName="judul" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_kategori" msprop:Generator_ColumnVarNameInTable="columnnama_kategori" msprop:Generator_ColumnPropNameInRow="nama_kategori" msprop:Generator_ColumnPropNameInTable="nama_kategoriColumn" msprop:Generator_UserColumnName="nama_kategori">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_lengkap" msprop:Generator_ColumnVarNameInTable="columnnama_lengkap" msprop:Generator_ColumnPropNameInRow="nama_lengkap" msprop:Generator_ColumnPropNameInTable="nama_lengkapColumn" msprop:Generator_UserColumnName="nama_lengkap">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_petugas" msprop:Generator_ColumnVarNameInTable="columnnama_petugas" msprop:Generator_ColumnPropNameInRow="nama_petugas" msprop:Generator_ColumnPropNameInTable="nama_petugasColumn" msprop:Generator_UserColumnName="nama_petugas">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kode_buku" msprop:Generator_ColumnVarNameInTable="columnkode_buku" msprop:Generator_ColumnPropNameInRow="kode_buku" msprop:Generator_ColumnPropNameInTable="kode_bukuColumn" msprop:Generator_UserColumnName="kode_buku">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tgl_pinjam" msprop:Generator_ColumnVarNameInTable="columntgl_pinjam" msprop:Generator_ColumnPropNameInRow="tgl_pinjam" msprop:Generator_ColumnPropNameInTable="tgl_pinjamColumn" msprop:Generator_UserColumnName="tgl_pinjam" type="xs:dateTime" />
+              <xs:element name="tgl_kembali" msprop:Generator_ColumnVarNameInTable="columntgl_kembali" msprop:Generator_ColumnPropNameInRow="tgl_kembali" msprop:Generator_ColumnPropNameInTable="tgl_kembaliColumn" msprop:Generator_UserColumnName="tgl_kembali" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:riwayat_peminjaman_buku" />
+      <xs:field xpath="mstns:id_pinjam" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
